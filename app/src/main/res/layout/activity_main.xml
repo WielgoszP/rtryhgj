@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Centrum Sterowania Światłem"
+        android:backgroundTint="@color/niebieski"
+        android:textColor="@color/niebieski"
+ />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+        android:id="@+id/obraz1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:src="@android:drawable/btn_star_big_off"
+            />
+
+        <Button
+            android:id="@+id/btn_1"
+            android:text="Salon: Biały"
+            android:layout_column="1"
+            android:layout_row="0"
+        />
+
+        <ImageView
+            android:id="@+id/obraz2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:src="@android:drawable/btn_star_big_off"
+            />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:text="Kuchnia: Biały"
+            android:layout_column="1"
+            android:layout_row="1"
+            />
+
+        <ImageView
+            android:id="@+id/obraz3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:src="@android:drawable/btn_star_big_off"
+            />
+        <Button
+            android:id="@+id/btn_3"
+            android:text="Sypialnia: Biały"
+            android:layout_column="1"
+            android:layout_row="2"
+            />
+        <RadioGroup
+            android:layout_column="1"
+            android:layout_row="3"
+            android:orientation="horizontal"
+            android:id="@+id/radiogrupa"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tryb1"
+                android:text="Tryb dzienny"
+            />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tryb2"
+                android:text="Tryb Wieczorny"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tryb3"
+                android:text="Tryb nocny"
+                />
+        </RadioGroup>
+
+
+    </GridLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zapisz Scenę"
+        android:id="@+id/btn_zapisz"/>
+
+    <ListView
+        android:id="@+id/listaview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+</LinearLayout>
